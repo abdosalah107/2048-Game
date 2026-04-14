@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="g2048">
+        <div class="top-bar">
+            <div class="logo">20<span>48</span></div>
+            <div class="score-group">
+                <div class="score-box">
+                    <div class="score-label">Score</div>
+                    <div class="score-val" id="score">0</div>
+                </div>
+                <div class="score-box">
+                    <div class="score-label">Best</div>
+                    <div class="score-val" id="best">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-row">
+            <button class="btn btn-new" id="btnNew">New Game</button>
+            <button class="btn btn-undo" id="btnUndo">↩ Undo</button>
+        </div>
+        <div class="board-wrap">
+            <div id="board">
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+                <div class="cell-bg"></div>
+            </div>
+            <div class="tile-container" id="tileContainer">
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+                <div class="tile-slot"></div>
+            </div>
+            <div class="overlay" id="overlay">
+                <div class="overlay-title" id="overlayTitle">Game Over</div>
+                <div class="overlay-sub" id="overlaySub"></div>
+                <button class="overlay-btn" id="overlayBtn">Try Again</button>
+                <button class="overlay-btn-secondary" id="overlayContinue" style="display:none">Keep Playing</button>
+            </div>
+        </div>
+        <p class="hint">Arrow keys, WASD, or swipe to move</p>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
